@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+* {
+	font-family: 'Muli', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* *behavior: url('../scripts/boxsizing.htc');
+    	If you need support for IE7 and lower make
+        sure the boxsizing.htc file is linked properly.
+        More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+html {
+	background-image: url('../images/background.jpg');	
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+	text-align: center;
+	color: whitesmoke;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 700;
+	margin-bottom: -20px;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 400
+	}
+
+h3 {
+	text-align: left;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+a {
+    cursor: pointer;
+	color: rgb(42,42,48);
+    text-decoration: none;
+}
+
+a:hover {text-decoration: underline;}
+
+div {
+	position: relative;
+	z-index: 2;
+}
+
+.text-links {
+	text-align: left;
+}
+
+.text-dunkel {
+	color: rgb(42,42,48);
+}
+
+/*Titelbild-------------------------------------------------------*/
+
+.bg {
+	z-index: 1;
+    height: 100%;
+	width: 100%;
+	
+}
+
+.bg-img {
+	position: fixed;
+	width: 100%;
+	top: 15%;
+	z-index: 1;
+}
+
+.bg-img img {
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.pfeil-link {
+	position: relative;
+	margin: 150px auto;
+	width: 50px;
+	height: 100px;
+}
+
+.pfeil {
+	width: 50px;
+	-webkit-animation-name: jump;
+    -moz-animation-name: jump;
+    -o-animation-name: jump;
+    -ms-animation-name: jump;
+    animation-name: jump;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@-moz-keyframes jump {
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+}
+
+@-o-keyframes jump {
+  0% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@-ms-keyframes jump {
+  0% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-30px);
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+	.bg-img img {
+		max-width: 80%;
+	}	
+}
+
+/*Hintergrund generell----------------------------------------------------*/
+
+
+
+.skew {
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	left: 0;
+	top: -20px;
+	margin-bottom: 50px;
+	transform: skewY(-1.5deg);
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 50px 20px 70px 20px;
+}
+
+.hell {
+	background-color: rgba(255,255,255,0.85);
+}
+
+.dunkel {
+	background-color: rgba(42,42,48,0.9);
+}
+
+.weiss {
+	background-color: white;
+	color: rgb(42,42,48);
+}
+
+
+
+/*Anreise Infos----------------------------------------------------*/
+.infos {
+	margin-top: 50px;
+}
+
+.gross {
+	font-size: 1.7em;
+}
+
+.daten {
+	height: 470px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around; 
+}
+
+.daten-text {
+	width: 30%;
+	text-align: left;
+	margin-left: 3%;
+}
+
+
+/*Filme--------------------------------------------------------*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0px;
+	height: 0;
+	display: none;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.filme {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around; 
+}
+
+.video{
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 33%;
+	margin: 0 1%
+}
+
+.film1 {
+	background-image: url(../images/filmwir.jpg);}
+
+.film2 {
+	background-image: url(../images/filmabenteuerschreiben.jpg);}
+
+.film3 {
+	background-image: url(../images/filmfatemachine.jpg);}
+
+img.playbutton {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.6;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	width: 100%;
+	height: auto;
+}
+img.playbutton:hover {
+	opacity: 1;
+}
+
+/*Kontakt----------------------------------------------------------*/
+
+
+.kontakt {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around; 
+}
+
+.kontakt-item {
+	width: 33%;
+	margin: 0 10px;
+}
+
+.kontakt-logo a img{
+	width: 50%;
+	margin: auto;
+}
+
+.kontakt a {color: whitesmoke;}
+
+
+/*Sponsoren------------------------------------------------------------*/
+
+.partner-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around; 
+}
+
+.partnerlogo {
+	position: relative;
+	opacity: 0.8;
+	width: 150px;
+	height: auto;
+	margin-top: 1%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+}
+
+.partnergross {
+	margin: 0 1% 10px
+	}
+
+/*Footer-------------------------------------------------------*/
+
+.footer {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	top: -75px;
+	color: black;
+	overflow: hidden;
+}
+
+.footer a {color: black;}
+
+.footskew {
+	width: 100%;
+	height: 300px; 
+	position: absolute;
+	left: 0;
+	top: 54px;
+	background-color: white;
+	transform: skewY(-1.5deg);
+}
+
+.copyright {
+	position: absolute;
+	bottom: 0px;
+	right: 60px;
+	z-index: 3;
+	text-align: right;
+}
+
+.impressum {
+	position: absolute;
+	left: 75px;
+	bottom: 10px;
+	z-index: 3;
+}
+
+
+
+
+
+@media only screen and (max-width: 950px) {
+	
+	.partner-container {
+	flex-wrap: wrap;
+	}
+
+	.partnerlogo {
+	opacity: 0.8;
+	width: 30%;
+	height: auto;
+	margin: 0 30px 40px 30px;
+	}	
+
+	
+	.daten {
+		height: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	
+	.daten-text {
+		width: 45%;
+		text-align: left;
+		margin: 0px;
+	}
+	
+	.gmap3 {
+		width: 100%;
+	}
+	
+	.videoWrapper {
+		display: block;
+	}
+	
+	.popup-vimeo {
+		display: none;
+	}
+	
+	.filmverdammt, .filmungehoert, .filmfaszination {
+	background: none;}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.bg-img img {
+		max-width: 80%;
+	}
+	
+	h1 {
+		font-size: 2em;	
+		margin-bottom: 0px;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	
+	.daten-text {
+		width: 90%;
+	}
+	
+	.daten-text:first-child {
+		padding-top: 40px;
+	}
+	
+	.filme {
+	flex-direction: column;
+	}
+	
+	.video{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 40px;
+	}
+	
+	.video:last-child {
+		margin: 0;
+	}
+	
+	
+	.kontakt {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+	.kontakt-item {
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.kontakt-item.text-links {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.kontakt-logo a img{
+	width: 100%;
+	margin: auto;
+}
+	
+	.kontakt .kontakt-item:nth-child(2) {
+	order: 0;
+	}
+	
+	.kontakt .kontakt-item:nth-child(3) {
+	order: 1;
+	}
+	
+	.kontakt .kontakt-item:nth-child(1) {
+	order: 2;
+	}
+	
+	.filme .video:nth-child(2) {
+	order: 0;
+	}
+	
+	.filme .video:nth-child(1) {
+	order: 1;
+	}
+	
+	.filme .video:nth-child(3) {
+	order: 2;
+	}
+	
+	.copyright {
+		right: 10px;
+		font-size: 0.8em;
+	}
+	
+	.impressum {
+		left: 10px;
+		font-size: 0.8em;
+	}
+}
+
+#kontakt a {color: whitesmoke;
+			text-decoration: underline;
+}
