@@ -12,8 +12,8 @@
 }
 
 html {
-	background-image: url('../images/background.jpg');	
-    background-position: center top;
+	background-image: url('../images/background2021.jpg');	
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -244,11 +244,11 @@ div {
 }
 
 .hell {
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,0.9);
 }
 
 .dunkel {
-	background-color: rgba(42,42,48,0.9);
+	background-color: rgba(42,42,48,0.95);
 }
 
 .weiss {
@@ -268,7 +268,7 @@ div {
 }
 
 .daten {
-	height: 470px;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -277,7 +277,7 @@ div {
 }
 
 .daten-text {
-	width: 30%;
+	width: 100%;
 	text-align: left;
 	margin-left: 3%;
 }
@@ -576,4 +576,9 @@ img.playbutton:hover {
 
 #kontakt a {color: whitesmoke;
 			text-decoration: underline;
+}
+
+.social-icon {
+    width: 19%;
+    margin: auto;
 }
