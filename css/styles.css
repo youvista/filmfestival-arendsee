@@ -1,5 +1,10 @@
 @charset "utf-8";
-
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400, 700;
+  src: url(..fonts/muli/.woff2) format('woff2');
+}
 * {
 	font-family: 'Muli', sans-serif;
     -webkit-box-sizing: border-box;
